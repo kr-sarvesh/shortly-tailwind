@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/script.js" defer></script>
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Shortly | Tailwind</title>
@@ -105,7 +106,7 @@
           class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
         >
           <input type="text" id=""link-input" class="flex-1 p-3 border-2
-          rounded-lg placeholder-yellow-500 focus:outline-none"
+          rounded-lg placeholder-yellow-500 focus:outline-none border-red "
           placeholder="shorten a link here" />
 
           <button
@@ -113,6 +114,14 @@
           >
             Shorten It!
           </button>
+
+          <!-- Error Message -->
+          <div
+            id="err-msg"
+            class="absolute left-7 bottom text-red text-sm italic"
+          >
+            HELLO
+          </div>
         </form>
         <!-- Link 1 -->
         <div
